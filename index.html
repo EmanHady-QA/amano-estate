@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amano Estate — Luxury Realty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="preview-banner">
+        ⬩ DESIGN PREVIEW — AMANO ESTATE ⬩ ENHANCED INTERACTIVE VERSION ⬩
+    </div>
+
+    <header>
+        <div class="logo">
+            <span>Amano Estate</span>
+        </div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Properties</a>
+            <a href="#about">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h4>Luxury Realty · Since 2009 Curated Properties</h4>
+        <h1>Where Distinction Meets Address</h1>
+        <p>Residential apartments, commercial spaces, and prime land — curated for those who refuse to compromise.</p>
+        <a href="#contact" class="btn">Request a Consultation</a>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header">
+            <h4>What We Offer</h4>
+            <h2>Our Services</h2>
+            <p style="color: #adb5bd; max-width: 600px; margin: 10px auto 0;">Engineering design, professional construction, and quality assurance — every project an experience, refined continuously.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="num">01</span>
+                <h3>Residential</h3>
+                <p>Curated apartments and villas in the city's most distinguished addresses.</p>
+            </div>
+            <div class="service-card">
+                <span class="num">02</span>
+                <h3>Commercial</h3>
+                <p>Grade-A offices and retail spaces engineered for performance and prestige.</p>
+            </div>
+            <div class="service-card">
+                <span class="num">03</span>
+                <h3>Land Parcels</h3>
+                <p>Prime plots with clear titles, ready for development or long-term holding.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <blockquote>“Every property we touch becomes a landmark of trust, quality, and timeless value.”</blockquote>
+        <cite>— The Amano Philosophy</cite>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="section-header">
+            <h4>Featured Portfolio</h4>
+            <h2>Signature Properties</h2>
+            <p style="color: #adb5bd;">A hand-selected collection chosen for location, craftsmanship, and lasting value.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterPortfolio('all')">All Properties</button>
+            <button class="filter-btn" onclick="filterPortfolio('residential')">Residential</button>
+            <button class="filter-btn" onclick="filterPortfolio('commercial')">Commercial</button>
+            <button class="filter-btn" onclick="filterPortfolio('land')">Land Parcels</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-card" data-category="residential">
+                <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80')">
+                    <span class="portfolio-tag">Residential</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Marina Heights</h3>
+                    <div class="portfolio-location">Marina District</div>
+                    <div class="portfolio-details">
+                        <div><b>185 m²</b> <br>Area</div>
+                        <div><b>3 BR</b> <br>Beds</div>
+                        <div><b>Ready</b> <br>Status</div>
+                    </div>
+                    <div class="portfolio-price">
+                        $1.2M <span>Starting</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="commercial">
+                <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80')">
+                    <span class="portfolio-tag">Commercial</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>The Atrium</h3>
+                    <div class="portfolio-location">Central Business District</div>
+                    <div class="portfolio-details">
+                        <div><b>320 m²</b> <br>Plate</div>
+                        <div><b>A+</b> <br>Grade</div>
+                        <div><b>Ready</b> <br>Status</div>
+                    </div>
+                    <div class="portfolio-price">
+                        $8,500 <span>per m² / yr</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card" data-category="land">
+                <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80')">
+                    <span class="portfolio-tag">Land</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Heritage Acres</h3>
+                    <div class="portfolio-location">Northern Greens</div>
+                    <div class="portfolio-details">
+                        <div><b>4,200 m²</b> <br>Plot</div>
+                        <div><b>R3</b> <br>Zone</div>
+                        <div><b>Clear Title</b> <br>Status</div>
+                    </div>
+                    <div class="portfolio-price">
+                        $3.8M <span>Whole Plot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="stats">
+        <div class="stat-item">
+            <h2>15</h2>
+            <h3>Years of Trust</h3>
+            <p>Established 2009</p>
+        </div>
+        <div class="stat-item">
+            <h2>450+</h2>
+            <h3>Properties Sold</h3>
+            <p>Across the region</p>
+        </div>
+        <div class="stat-item">
+            <h2>98%</h2>
+            <h3>Satisfaction</h3>
+            <p>Client retained</p>
+        </div>
+        <div class="stat-item">
+            <h2>28</h2>
+            <h3>Active Projects</h3>
+            <p>Currently live</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h4>Begin The Conversation</h4>
+            <h2>Request a Consultation</h2>
+            <p style="color: #adb5bd;">Share your requirements — a senior advisor will reach out within 24 hours.</p>
+        </div>
+
+        <div class="form-container">
+            <div id="successAlert" class="success-alert">
+                ✓ Thank you! Your inquiry has been sent successfully. A senior advisor will contact you soon.
+            </div>
+
+            <form id="consultationForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>FULL NAME *</label>
+                        <input type="text" class="form-control" required placeholder="James Whitfield">
+                    </div>
+                    <div class="form-group">
+                        <label>PHONE *</label>
+                        <input type="tel" class="form-control" required placeholder="+1 (555) 000-0000">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>PROPERTY TYPE *</label>
+                        <select class="form-control" required>
+                            <option value="">(— Select —)</option>
+                            <option>Residential Apartment</option>
+                            <option>Commercial Space</option>
+                            <option>Land Parcel</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>BUDGET RANGE *</label>
+                        <select class="form-control" required>
+                            <option value="">(— Select —)</option>
+                            <option>Under $500K</option>
+                            <option>$500K – $1M</option>
+                            <option>$1M – $3M</option>
+                            <option>$3M – $5M</option>
+                            <option>Above $5M</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>PREFERRED AREA</label>
+                    <input type="text" class="form-control" placeholder="Marina District, CBD, Northern Greens...">
+                </div>
+
+                <div class="form-group">
+                    <label>NOTES (OPTIONAL)</label>
+                    <textarea class="form-control" rows="4" placeholder="Timeline, specific requirements, questions..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <a href="#" class="whatsapp-float" title="Chat with Us">
+        💬
+    </a>
+
+    <footer>
+        <div class="logo" style="font-size: 1.2rem;">
+            <span>Amano Estate</span>
+        </div>
+        <div class="info">
+            <span><b>Phone:</b> +1 (555) 234-7890</span>
+            <span><b>Email:</b> concierge@amanoestate.com</span>
+            <span><b>Office:</b> 14 Heritage Square, Marina District</span>
+        </div>
+        <div>
+            © 2026 Amano Estate · All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
